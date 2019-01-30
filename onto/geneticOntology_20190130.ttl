@@ -1,0 +1,131 @@
+@prefix : <http://example.org/GeneticOntology> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+
+############
+##
+## ONTOLOGY
+##
+############
+
+: 	a owl:Ontology ;
+	dc:title "Genetic Network Ontology"@en ;
+	dc:description "This ontology is a generic model for genetic entities and their relationships, applicable mainly in the fields of genetic criticism and scholarly editing"^^xsd:string ;
+	dc:modified "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	dc:rights "This work is distributed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/)."^^xsd:string ;
+	dc:contributor "Alessio Christen"^^xsd:string ;
+	dc:creator "Elena Spadini"^^xsd:string ;
+	owl:versionInfo "1.0"^^xsd:string .
+	 
+
+############
+##
+## CLASSES
+##
+############
+
+
+:Document 	a owl:Class ;
+			rdfs:label "Document"@en ;
+			rdfs:comment "A manuscript, typescript or printed text with manuscript evidence kept in an archive or private collection."@en .					
+
+:Publication 	a owl:Class ;
+                rdfs:label "Publication"@en ;
+				rdfs:comment "Print and published text: a book, a section of a book or a periodical article."@en .
+
+:GeneticDossier		a owl:Class ;
+					rdfs:label "Genetic dossier"@en ;
+					rdfs:comment "The genetic dossier includes the avant-texte of a work, which has been published or conceived for publication." .
+
+
+
+###############
+##
+## PROPERTIES
+##
+###############
+
+
+#========== Document genetic stage ===========#
+:hasGeneticStage	a owl:DatatypeProperty ;
+					rdfs:label "has genetic stage"@en ;
+					rdfs:domain :Document ;
+					rdfs:range rdfs:Literal .
+
+
+
+#========== Genetic dossier ===========#
+:documentIsPartOfGeneticDossier 	a owl:ObjectProperty ;
+									rdfs:label "is part of"@en ;
+									rdfs:domain :Document ;
+									rdfs:range :GeneticDossier .
+
+:geneticDossierResultsInPublication a owl:ObjectProperty ;
+									rdfs:label "results in"@en ;
+									rdfs:domain :GeneticDossier ;
+									rdfs:range :Publication .
+
+
+
+#========== isRewrittenIn ===========#
+:diaryRewrittenInDiary 	a owl:ObjectProperty ;
+						rdfs:label "is rewritten in"@en ;
+						rdfs:domain :Document ;
+						rdfs:range :Document .
+
+
+#========== avant-texte ===========#
+:isBeforeInAvantTexte 	a owl:ObjectProperty ;
+						rdfs:label "is before"@en ;
+						rdfs:domain :Document ;
+						rdfs:range :Document .
+
+
+
+#========== isReusedIn ===========#
+:isReusedIn 	a owl:ObjectProperty ;
+				rdfs:label "is reused in"@en ;
+				rdfs:range :GeneticDossier .
+
+
+:diaryReusedIn	a owl:ObjectProperty ;
+				rdfs:subPropertyOf :isReusedIn ;
+				rdfs:label "diary reused in"@en ;
+				rdfs:domain :Document ;
+				rdfs:range :GeneticDossier .
+
+
+:publicationReusedInNewText 	a owl:ObjectProperty ;
+								rdfs:subPropertyOf :isReusedIn ;
+								rdfs:label "publication reused in new text"@en ;
+								rdfs:domain :Publication ;
+								rdfs:range :GeneticDossier .
+
+:publicationPartiallyReusedInCollection 	a owl:ObjectProperty ;
+											rdfs:subPropertyOf :isReusedIn ;
+											rdfs:label "publication partially reused in collection"@en ;
+											rdfs:domain :Publication ;
+											rdfs:range :GeneticDossier .
+
+
+:publicationFullyReusedInCollection 	a owl:ObjectProperty ;
+										rdfs:subPropertyOf :isReusedIn ;
+										rdfs:label "publication fully reused in collection"@en ;
+										rdfs:domain :Publication ;
+										rdfs:range :GeneticDossier .
+
+
+:publicationIsReissued 	a owl:ObjectProperty ;
+						rdfs:subPropertyOf :isReusedIn ;
+						rdfs:label "publication reissued in"@en ;
+						rdfs:domain :Publication ;
+						rdfs:range :GeneticDossier .
+
+
+
+
+
+
