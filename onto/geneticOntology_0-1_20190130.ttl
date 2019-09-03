@@ -18,7 +18,7 @@
 	dc:rights "This work is distributed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/)."^^xsd:string ;
 	dc:contributor "Alessio Christen"^^xsd:string ;
 	dc:creator "Elena Spadini"^^xsd:string ;
-	owl:versionInfo "1.0"^^xsd:string .
+	owl:versionInfo "0.1"^^xsd:string .
 	 
 
 ############
