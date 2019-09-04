@@ -15,7 +15,7 @@
 :GeneticOntology 	a owl:Ontology ;
 					dc:title "Genetic Network Ontology"@en ;
 					dc:description "This ontology is a generic model for genetic entities and their relationships, applicable mainly in the fields of genetic criticism and scholarly editing"^^xsd:string ;
-					dc:description <https://elespdn.github.io/talks/20190719_verona/images/clsrHomepage.png> ; # ADD IMAGE FROM JAHIA
+					# dc:description <https://elespdn.github.io/talks/20190719_verona/images/clsrHomepage.png> ;
 					dc:date "2019-09-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
 					dc:rights "This work is distributed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/)."^^xsd:string ;
 					dc:creator 	"Elena Spadini"^^xsd:string ,
