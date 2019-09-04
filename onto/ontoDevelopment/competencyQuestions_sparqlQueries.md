@@ -63,7 +63,7 @@ group by ?GeneticDossier
 
 **Question 3**
 
-```
+```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX onto: <http://example.org/geneticOntology/onto#>
 PREFIX data: <http://example.org/geneticOntology/data#>
@@ -78,7 +78,7 @@ where {
 
 **Question 4**
 
-```
+```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX onto: <http://example.org/geneticOntology/onto#>
 select ?AvantTexte (count(?GeneticDossier) as ?count)
