@@ -81,7 +81,7 @@ data:Cendre_Ajourdhui_19300710  	onto:publicationIsReusedInGeneticDossier  	data
 ## Feuillets
 
 data:CLSRHLMD1ROU4_Feuillets 	a  		onto:AvantTexte ;
-								onto:AvantTexteIsPartOfGeneticDossier  	data:GD_Feuillets_Ecrits_1950 .
+								onto:avantTexteIsPartOfGeneticDossier  	data:GD_Feuillets_Ecrits_1950 .
 
 
 ## Air de la solitude
@@ -108,7 +108,7 @@ data:GD_PremierCoupDeFaux_Aujourdhui_19300501  	a  	onto:geneticDossier ;
 data:PremierCoupDeFaux_Aujourdhui_19300501  	onto:publicationIsReusedInGeneticDossier 	data:GD_AirDeLaSolitude_1945 .
 
 data:collectionPrive_AirDeLaSolitude  	a  	onto:AvantTexte ;
-										onto:AvantTexteIsPartOfGeneticDossier  	data:GD_AirDeLaSolitude_1945 .
+										onto:avantTexteIsPartOfGeneticDossier  	data:GD_AirDeLaSolitude_1945 .
 
 
 ############
@@ -126,10 +126,10 @@ data:CLSRGRMS1H12b_LaNeige 	a 	onto:Diary ;
 							onto:diaryIsReusedInGeneticDossier  data:GD_Dedicace_SchweizerAnnalen_193511 .
 
 data:CLSRGRMS1H11a_LaBise 	a 	onto:AvantTexte ;
-							onto:AvantTexteIsPartOfGeneticDossier data:GD_Dedicace_SchweizerAnnalen_193511 .
+							onto:avantTexteIsPartOfGeneticDossier data:GD_Dedicace_SchweizerAnnalen_193511 .
 
 data:CLSRGRMS1H12a_Dedicace 	a 	onto:AvantTexte ;
-								onto:AvantTexteIsPartOfGeneticDossier data:GD_Dedicace_SchweizerAnnalen_193511 .
+								onto:avantTexteIsPartOfGeneticDossier data:GD_Dedicace_SchweizerAnnalen_193511 .
 
 data:CLSRGRMS1H11a_LaBise 	onto:AvantTexteisBeforeAvantTexte 	data:CLSRGRMS1H12a_Dedicace .
 
@@ -151,13 +151,13 @@ data:GD_DeuxMomentsDUneQuete_SuisseContemporaine_194111 	a  	onto:GeneticDossier
 data:Dedicace_SchweizerAnnalen_193511  	onto:publicationIsReusedInGeneticDossier 	data:GD_DeuxMomentsDUneQuete_SuisseContemporaine_194111 .
 
 data:CLSRGRMS1H13a_Quete 	a  	onto:AvantTexte ;
-							onto:AvantTexteIsPartOfGeneticDossier 	data:GD_DeuxMomentsDUneQuete_SuisseContemporaine_194111 .
+							onto:avantTexteIsPartOfGeneticDossier 	data:GD_DeuxMomentsDUneQuete_SuisseContemporaine_194111 .
 
 data:CLSRGRMS1H13b_DeuxMoments 	a  	onto:AvantTexte ;
-								onto:AvantTexteIsPartOfGeneticDossier 	data:GD_DeuxMomentsDUneQuete_SuisseContemporaine_194111 .
+								onto:avantTexteIsPartOfGeneticDossier 	data:GD_DeuxMomentsDUneQuete_SuisseContemporaine_194111 .
 
 data:CLSRGRMS1H13c_NonPas 	a  	onto:AvantTexte ;
-								onto:AvantTexteIsPartOfGeneticDossier 	data:GD_DeuxMomentsDUneQuete_SuisseContemporaine_194111 .
+								onto:avantTexteIsPartOfGeneticDossier 	data:GD_DeuxMomentsDUneQuete_SuisseContemporaine_194111 .
 
 data:CLSRGRMS1H13a_Quete 	onto:avantTextIsBeforeAvantTexte 	data:CLSRGRMS1H13b_DeuxMoments .
 data:data:CLSRGRMS1H13b_DeuxMoments 	onto:avantTextIsBeforeAvantTexte 	data:CLSRGRMS1H13c_NonPas .
@@ -173,19 +173,19 @@ data:GD_DUneQuete_BottegheOscure_195005 	a  	onto:GeneticDossier ;
 data:DeuxMomentsDUneQuete_SuisseContemporaine_194111 	onto:publicationIsReusedInGeneticDossier 	data:GD_DUneQuete_BottegheOscure_195005 .										
 
 data:CLSRGRMS1H14b_EntreLes 	a  	onto:AvantTexte ;
-								onto:AvantTexteIsPartOfGeneticDossier 	data:GD_DUneQuete_BottegheOscure_195005 .
+								onto:avantTexteIsPartOfGeneticDossier 	data:GD_DUneQuete_BottegheOscure_195005 .
 
 data:CLSRGRMS1H14a_LeVatican 	a  	onto:AvantTexte ;
-								onto:AvantTexteIsPartOfGeneticDossier 	data:GD_DUneQuete_BottegheOscure_195005 .
+								onto:avantTexteIsPartOfGeneticDossier 	data:GD_DUneQuete_BottegheOscure_195005 .
 
 data:CLSRGRMS1H14c_DUnRequiem 	a  	onto:AvantTexte ;
-								onto:AvantTexteIsPartOfGeneticDossier 	data:GD_DUneQuete_BottegheOscure_195005 .
+								onto:avantTexteIsPartOfGeneticDossier 	data:GD_DUneQuete_BottegheOscure_195005 .
 
 data:CLSRGRMS1H14d_DUnRequiem 	a  	onto:AvantTexte ;
-								onto:AvantTexteIsPartOfGeneticDossier 	data:GD_DUneQuete_BottegheOscure_195005 .
+								onto:avantTexteIsPartOfGeneticDossier 	data:GD_DUneQuete_BottegheOscure_195005 .
 
 data:CLSRGRMS1H14e_NonPas 	a  	onto:AvantTexte ;
-								onto:AvantTexteIsPartOfGeneticDossier 	data:GD_DUneQuete_BottegheOscure_195005 .
+								onto:avantTexteIsPartOfGeneticDossier 	data:GD_DUneQuete_BottegheOscure_195005 .
 
 data:CLSRGRMS1H14b_EntreLes 	onto:avantTextIsBeforeAvantTexte 	data:CLSRGRMS1H14c_DUnRequiem .
 data:CLSRGRMS1H14a_LeVatican 	onto:avantTextIsBeforeAvantTexte 	data:CLSRGRMS1H14c_DUnRequiem .
@@ -203,7 +203,7 @@ data:GD_MoulinDeLussery_LeRadio_19341123 	a 	onto:GeneticDossier ;
 data:MoulinDeLussery_LeRadio_19341123 	onto:publicationIsReusedInGeneticDossier 	data:GD_DUneQuete_BottegheOscure_195005 .
 
 data:LaChauxDeFonds10675 	a 	onto:GeneticDossier ; 	
-							onto:AvantTexteIsPartOfGeneticDossier 	data:GD_DUneQuete_BottegheOscure_195005 .
+							onto:avantTexteIsPartOfGeneticDossier 	data:GD_DUneQuete_BottegheOscure_195005 .
 
 
 ## Requiem
@@ -216,4 +216,4 @@ data:GD_Requiem_1967 	a  	onto:GeneticDossier ;
 data:DUneQuete_BottegheOscure_195005  	onto:publicationIsReusedInGeneticDossier 	data:GD_Requiem_1967 .
 
 data:CLSRGRMS1H21a_DUnRequiem 	a 	onto:AvantTexte ;
-								onto:AvantTexteIsPartOfGeneticDossier  	data:GD_Requiem_1967 .
+								onto:avantTexteIsPartOfGeneticDossier  	data:GD_Requiem_1967 .
