@@ -1,4 +1,4 @@
-# geneticOntology
+# GENO, a Genetic Ontology
 
 This is the development repo of GENO, an OWL2 ontology for the field of genetic criticism and genetic editing.
 
